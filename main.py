@@ -401,7 +401,9 @@ class CalendarShapeApp:
         self.root = root
         self.root.title("Calendar App - Home (Shape Mockup v3)")
         self.root.geometry(f"{WIDTH}x{HEIGHT}")
+        self.root.attributes("-fullscreen", True)
         self.root.resizable(False, False)
+        self.root.overrideredirect(True)
 
         # Dark mode toggles via the "4" key (see _on_key_press). The
         # active palette lives in self.theme and every drawing method
