@@ -1047,6 +1047,6 @@ class CalendarShapeApp:
 
 
 if __name__ == "__main__":
-    root = tk.Tk()
+    root = tk.Tk(className="CalendarApp")
     app = CalendarShapeApp(root)
     root.mainloop()
