@@ -402,9 +402,14 @@ class CalendarShapeApp:
         self.root.title("Calendar App - Home (Shape Mockup v3)")
         self.root.geometry(f"{WIDTH}x{HEIGHT}")
         self.root.attributes("-fullscreen", True)
+        self.root.overrideredirect(True)
         self.root.resizable(False, False)
         self.root.bind("<Escape>", lambda e: self.root.destroy())
-        self.root.focus_force()
+
+        # Force focus AFTER overrideredirect, and keep trying briefly
+        self.root.after(50, self.root.focus_force)
+        self.root.after(200, self.root.focus_force)
+        self.root.after(500, self.root.focus_force)
 
         # Dark mode toggles via the "4" key (see _on_key_press). The
         # active palette lives in self.theme and every drawing method
