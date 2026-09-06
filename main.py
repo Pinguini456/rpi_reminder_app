@@ -403,6 +403,7 @@ class CalendarShapeApp:
         self.root.geometry(f"{WIDTH}x{HEIGHT}")
         self.root.attributes("-fullscreen", True)
         self.root.resizable(False, False)
+        self.root.bind("<Escape>", lambda e: self.root.destroy())
         self.root.overrideredirect(True)
 
         # Dark mode toggles via the "4" key (see _on_key_press). The
