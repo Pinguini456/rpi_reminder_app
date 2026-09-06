@@ -64,7 +64,7 @@ _SUMMARY_COURSE_RE = re.compile(r"\[([^\[\]]+)\]\s*$")  # trailing "[COURSE CODE
 # Set this to a timedelta to make the whole app behave as if "now" is
 # shifted by that much (e.g. testing what today's classes / current-time
 # line look like 2 weeks out). Set it back to None for normal/live use.
-TEST_TIME_OFFSET = timedelta(weeks=2)
+TEST_TIME_OFFSET = timedelta()
 
 
 def now():
