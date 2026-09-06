@@ -136,7 +136,7 @@ CLASS_LINGER_MINUTES = 10    # a class stays visible this long into the next one
 # ---------------------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------------------
-WIDTH = 595
+WIDTH = 600
 HEIGHT = 1024
 
 TAB_BAR_AREA_HEIGHT = 70        # total header area reserved for tabs
